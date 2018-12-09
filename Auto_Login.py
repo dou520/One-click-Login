@@ -1,4 +1,10 @@
 import requests
+import os
+import time
+
+def openwifi():
+    os.system('netsh wlan connect name=i-NUIST')
+    time.sleep(5)
 
 def login():
     thedata={'domain':'CMCC',
