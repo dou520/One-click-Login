@@ -8,6 +8,7 @@ def openwifi():
     
 def killtask():
     os.system('TASKKILL /F /IM Google Chrome.exe ')
+    
 def login():
     thedata={'domain':'CMCC',
            'enablemacauth':'0',
