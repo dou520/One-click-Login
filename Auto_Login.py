@@ -5,7 +5,9 @@ import time
 def openwifi():
     os.system('netsh wlan connect name=i-NUIST')
     time.sleep(5)
-
+    
+def killtask():
+    os.system('TASKKILL /F /IM Google Chrome.exe ')
 def login():
     thedata={'domain':'CMCC',
            'enablemacauth':'0',
