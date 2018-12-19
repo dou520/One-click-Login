@@ -32,3 +32,10 @@ def login():
 
     url="http://a.nuist.edu.cn/index.php/index/login"
     p=requests.post(url,data=thedata,headers=theheader)
+
+def main():
+    openwifi()
+    login()
+    killtask()
+    os._exit(0)
+main()
